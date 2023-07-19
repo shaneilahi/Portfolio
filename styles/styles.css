@@ -1,0 +1,271 @@
+body {
+  background-color: darkslateblue;
+  color: white;
+  /* font-family: 'Mulish', sans-serif; */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+p, h1, h2{
+  margin: 0;
+}
+
+
+header {
+  display: flex;
+  flex-direction: row;
+  column-gap: 5px;
+  font-size: 19px;
+  height: 100px;
+  
+  justify-content: center;
+  align-items: center;
+
+}
+
+header div {
+  display: flex;
+  justify-content: center;
+  width: 100px;
+}
+
+header .active a {
+  color: yellow;
+}
+
+header a {
+  cursor: pointer;
+  transition: font-size 0.15s;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+}
+
+header a:hover {
+  color: yellow;
+  font-size: 23px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+
+  height: 20%;
+}
+
+.yt-icon {
+  filter: invert(100%) sepia(54%) saturate(2%) hue-rotate(193deg) brightness(102%) contrast(101%);
+}
+
+
+.footer-icons {
+  display: flex;
+  align-items: center;
+}
+
+.footer-icons div {
+  display: flex;
+  padding: 10px 15px;
+}
+
+
+.yt-icon:hover {
+  filter: brightness(0) saturate(100%) invert(25%) sepia(85%) saturate(7472%) hue-rotate(356deg) brightness(103%) contrast(117%);
+}
+
+.ig-icon:hover {
+  filter: brightness(0) saturate(100%) invert(32%) sepia(77%) saturate(2959%) hue-rotate(312deg) brightness(104%) contrast(101%);
+}
+
+.bird-icon:hover {
+  filter: brightness(0) saturate(1000%) invert(91%) sepia(92%) saturate(3763%) hue-rotate(149deg) brightness(104%) contrast(103%);;
+}
+
+.main-home {
+  display: flex;
+  height: 70%;
+  /* padding-top: 250px; */
+  /* width: 100%; */
+  /* padding: 0 160px; */
+  margin: 0 10px;
+  text-align: center;
+  column-gap: 10px;
+  justify-content: center;
+  align-items: center;
+
+  /* display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%; */
+}
+
+.portfolio-header {
+  padding-left: 17px;
+}
+
+.main-home p {
+  font-family: Mulish;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.main-home .name,
+.main-home .js-do-ur-thing {
+  color: yellow;
+}
+
+.content-1 {
+  flex: 2;
+  margin-left: 10px;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  /* width: 700px; */
+  /* width: 300px; */
+}
+
+.content-1 .content-1-ima {
+  padding: 10px 0;
+}
+
+.content-1 .content-1-para {
+  font-family: Mulish;
+  font-size: 20px;
+}
+
+.content-1 .content-1-buttons {
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* column-gap: 15px; */
+}
+
+.content-1 .content-1-buttons img:hover {
+  filter: brightness(0) saturate(100%) invert(90%) sepia(35%) saturate(516%) hue-rotate(346deg) brightness(106%) contrast(105%);
+}
+
+.content-1 .content-1-buttons button {
+  background-color: transparent;
+  border: 2px solid yellow;
+  color: yellow;
+  font-size: 13px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-family: Mulish;
+  font-weight: 700;
+  cursor: pointer;
+  transition: box-shadow 0.2s, padding 0.2s, font-size 0.2s;
+}
+
+.content-1 .content-1-buttons .github-a {
+  margin-right: 13px;
+}
+
+
+.content-1 .content-1-buttons .download-a {
+  width: 143px;
+  margin-left: 5px;
+}
+
+.content-1 .content-1-buttons button:hover {
+  box-shadow: 0 0 5px 5px rgba(255, 255, 0, 0.349);
+  padding: 12px 20px;
+  font-size: 15px;
+  text-shadow:  0 0 10px rgba(255, 255, 0, 0.788);
+}
+
+.content-2 {
+  flex: 1;
+  /* display: flex;
+  justify-content: flex-start;
+  align-items: center; */
+}
+
+.content-2 .left-point {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+  width: 300px;
+  /* min-width: 357px; */
+  /* width: 350px; */
+  background-color: yellow;
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+}
+
+.content-2 .pfp {
+  height: 180px;
+  width: 180px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 150px;
+}
+
+
+/* Only apply the CSS code below when screen width
+is between 0px - 750px. */
+@media (max-width: 500px) {
+
+  .portfolio-header {
+    padding-left:  0;
+  }
+  .content-2 .left-point {
+    width: 220px;
+  }
+
+  .content-2 .pfp {
+    height: 150px;
+    width: 150px;
+    border-radius: 150px;
+  }
+
+}
+
+@media (min-width: 500.02px) and (max-width: 750px) {
+  .content-2 .left-point {
+    width: 250px;
+  }
+
+  .content-2 .pfp {
+    height: 150px;
+    width: 150px;
+    border-radius: 150px;
+  }
+}
+
+/* CSS code when screen width is between 750px - 1000px. */
+@media (min-width: 750.02px) and (max-width: 1000px) {
+  .content-2 .left-point {
+    width: 300px;
+  }
+  
+}
+
+/* CSS code when the screen width is over 1000px. */
+@media (min-width: 1000.02px) {
+  .content-2 .left-point {
+    width: 350px;
+  }
+
+  .main-home p {
+    font-size: 40px;
+  }
+
+  .main-home .content-1-ima p {
+    font-size: 30px;
+  }
+
+}
+
+/* Done with portfolio styles */
+

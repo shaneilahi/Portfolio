@@ -1,0 +1,31 @@
+.main-design {
+  display: flex;
+  flex-direction: column;
+  /* text-align: center; */
+  /* justify-content: center; */
+  align-items: center;
+
+  background-color: white;
+  color: black;
+}
+
+.header-design {
+  padding-left: 17px;
+}
+
+.footer-design {
+  height: 100%;
+  justify-content: flex-start;
+  padding-left: 17px;
+}
+
+.footer-design .footer-icons {
+  padding-top: 10px;
+}
+
+.body-design {
+  display: grid;
+  grid-template-rows: 100px 1fr 150px;
+  align-items: center;
+  /* height: 1000px; */
+}

@@ -1,0 +1,55 @@
+
+/* Only apply the CSS code below when screen width
+is between 0px - 750px. */
+@media (max-width: 500px) {
+
+  .portfolio-header {
+    padding-left:  0;
+  }
+  .content-2 .left-point {
+    width: 220px;
+  }
+
+  .content-2 .pfp {
+    height: 150px;
+    width: 150px;
+    border-radius: 150px;
+  }
+
+}
+
+@media (min-width: 500.02px) and (max-width: 750px) {
+  .content-2 .left-point {
+    width: 250px;
+  }
+
+  .content-2 .pfp {
+    height: 150px;
+    width: 150px;
+    border-radius: 150px;
+  }
+}
+
+/* CSS code when screen width is between 750px - 1000px. */
+@media (min-width: 750.02px) and (max-width: 1000px) {
+  .content-2 .left-point {
+    width: 300px;
+  }
+  
+}
+
+/* CSS code when the screen width is over 1000px. */
+@media (min-width: 1000.02px) {
+  .content-2 .left-point {
+    width: 350px;
+  }
+
+  .main-home p {
+    font-size: 40px;
+  }
+
+  .main-home .content-1-ima p {
+    font-size: 30px;
+  }
+
+}

@@ -1,0 +1,45 @@
+
+/* Only apply the CSS code below when screen width
+is between 0px - 750px. */
+
+@media (max-width: 580px) {
+  .header-skills {
+    padding-left: 0;
+  }
+  .first-row h1 {
+    font-size: 23px;
+  }
+
+  .second-row {
+    /* width: 400px; */
+    font-size: 15px;
+  }
+
+  .third-row {
+    grid-template-columns: 1fr 1fr;
+    margin: 0 10px;
+    column-gap: 30px;
+    row-gap: 20px;
+    margin-bottom: 30px;
+  }
+
+  .third-row img {
+    height: 85px;
+  }
+
+  .third-row div {
+    width: 200px;
+    height: 120px;
+  }
+
+  .third-row .outer-container {
+    width: 220px;
+    height: 140px;
+  }
+
+  .third-row .inner-loop:hover {
+    width: 100%;
+    height: 100%;
+  }
+
+}

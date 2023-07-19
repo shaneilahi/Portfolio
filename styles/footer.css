@@ -1,0 +1,36 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+
+  height: 20%;
+}
+
+.yt-icon {
+  filter: invert(100%) sepia(54%) saturate(2%) hue-rotate(193deg) brightness(102%) contrast(101%);
+}
+
+
+.footer-icons {
+  display: flex;
+  align-items: center;
+}
+
+.footer-icons div {
+  display: flex;
+  padding: 10px 15px;
+}
+
+
+.yt-icon:hover {
+  filter: brightness(0) saturate(100%) invert(25%) sepia(85%) saturate(7472%) hue-rotate(356deg) brightness(103%) contrast(117%);
+}
+
+.ig-icon:hover {
+  filter: brightness(0) saturate(100%) invert(32%) sepia(77%) saturate(2959%) hue-rotate(312deg) brightness(104%) contrast(101%);
+}
+
+.bird-icon:hover {
+  filter: brightness(0) saturate(1000%) invert(91%) sepia(92%) saturate(3763%) hue-rotate(149deg) brightness(104%) contrast(103%);;
+}
